@@ -22,17 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9b4fdb8-417f-4859-82db-19a496b961bc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PPE-LIGUE-DAO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PPE-LIGUE-DAO/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/LoginForm.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/LoginForm.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/LoginForm.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/LoginForm.resx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/bin/Debug/PPE-LIGUE-DAO.exe" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/bin/Debug/PPE-LIGUE-DAO.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/bin/Debug/PPE-LIGUE-DAO.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/bin/Debug/PPE-LIGUE-DAO.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE-LIGUE-DAO.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE-LIGUE-DAO.csproj.GenerateResource.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE-LIGUE-DAO.exe" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE-LIGUE-DAO.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE-LIGUE-DAO.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE-LIGUE-DAO.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE_LIGUE_DAO.LoginForm.resources" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE_LIGUE_DAO.LoginForm.resources" afterDir="false" />
-    </list>
+    <list default="true" id="d9b4fdb8-417f-4859-82db-19a496b961bc" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,7 +100,7 @@
       <workItem from="1607428089283" duration="340000" />
       <workItem from="1607432707303" duration="2694000" />
       <workItem from="1607436615802" duration="654000" />
-      <workItem from="1607437429340" duration="3248000" />
+      <workItem from="1607437429340" duration="4017000" />
     </task>
     <servers />
   </component>
