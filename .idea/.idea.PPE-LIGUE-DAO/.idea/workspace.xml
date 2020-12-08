@@ -23,12 +23,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9b4fdb8-417f-4859-82db-19a496b961bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/loginDAO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PPE-LIGUE-DAO/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PPE-LIGUE-DAO/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PPE-LIGUE-DAO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PPE-LIGUE-DAO/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/DAOFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/DAOFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/LoginForm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/LoginForm.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/PPE-LIGUE-DAO.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/PPE-LIGUE-DAO.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/LoginForm.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/LoginForm.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/LoginForm.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/LoginForm.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/bin/Debug/PPE-LIGUE-DAO.exe" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/bin/Debug/PPE-LIGUE-DAO.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/bin/Debug/PPE-LIGUE-DAO.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/bin/Debug/PPE-LIGUE-DAO.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE-LIGUE-DAO.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE-LIGUE-DAO.csproj.GenerateResource.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE-LIGUE-DAO.exe" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE-LIGUE-DAO.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE-LIGUE-DAO.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE-LIGUE-DAO.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE_LIGUE_DAO.LoginForm.resources" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE_LIGUE_DAO.LoginForm.resources" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +110,7 @@
       <workItem from="1607428089283" duration="340000" />
       <workItem from="1607432707303" duration="2694000" />
       <workItem from="1607436615802" duration="654000" />
-      <workItem from="1607437429340" duration="1762000" />
+      <workItem from="1607437429340" duration="3248000" />
     </task>
     <servers />
   </component>
@@ -136,22 +139,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="348" y="356" key="#SQL_Dialects/0.0.1920.1040@0.0.1920.1040" timestamp="1607439207431" />
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1607438262557">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1607443336449">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607438262557" />
-    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1607438262557">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607443336449" />
+    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1607443336449">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607438262557" />
-    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1607438262557">
+    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607443336449" />
+    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1607443336449">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607438262557" />
-    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1607438262557">
+    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607443336449" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1607443336449">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607438262557" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607443336449" />
     <state x="835" y="469" key="Items removing confirmation dialog" timestamp="1607434482382">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
