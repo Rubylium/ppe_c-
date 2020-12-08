@@ -9,6 +9,7 @@
         <e p="App.config" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="DAOFactory.cs" t="Include" />
+        <e p="loginDAO.cs" t="Include" />
         <e p="LoginForm.cs" t="Include" />
         <e p="LoginForm.Designer.cs" t="Include" />
         <e p="LoginForm.resx" t="Include" />
