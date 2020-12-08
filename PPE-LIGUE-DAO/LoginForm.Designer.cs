@@ -31,6 +31,7 @@ namespace PPE_LIGUE_DAO
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.boxLogin = new System.Windows.Forms.TextBox();
             this.boxMdp = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -70,6 +71,8 @@ namespace PPE_LIGUE_DAO
             // 
             // buttonConnect
             // 
+            this.buttonConnect.ForeColor = System.Drawing.Color.Snow;
+            this.buttonConnect.Image = ((System.Drawing.Image) (resources.GetObject("buttonConnect.Image")));
             this.buttonConnect.Location = new System.Drawing.Point(125, 141);
             this.buttonConnect.Name = "buttonConnect";
             this.buttonConnect.Size = new System.Drawing.Size(100, 23);
@@ -89,7 +92,9 @@ namespace PPE_LIGUE_DAO
             this.Controls.Add(this.boxMdp);
             this.Controls.Add(this.boxLogin);
             this.Name = "LoginForm";
+            this.ShowIcon = false;
             this.Text = "LoginForm";
+            this.TopMost = true;
             this.ResumeLayout(false);
             this.PerformLayout();
         }
