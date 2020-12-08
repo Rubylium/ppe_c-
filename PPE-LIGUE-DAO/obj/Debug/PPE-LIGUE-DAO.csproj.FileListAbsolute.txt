@@ -6,4 +6,4 @@ E:\C#\PPE-LIGUE-DAO\PPE-LIGUE-DAO\obj\Debug\PPE_LIGUE_DAO.Properties.Resources.r
 E:\C#\PPE-LIGUE-DAO\PPE-LIGUE-DAO\obj\Debug\PPE-LIGUE-DAO.csproj.GenerateResource.cache
 E:\C#\PPE-LIGUE-DAO\PPE-LIGUE-DAO\obj\Debug\PPE-LIGUE-DAO.exe
 E:\C#\PPE-LIGUE-DAO\PPE-LIGUE-DAO\obj\Debug\PPE-LIGUE-DAO.pdb
-E:\C#\PPE-LIGUE-DAO\PPE-LIGUE-DAO\obj\Debug\PPE_LIGUE_DAO.Form1.resources
+E:\C#\PPE-LIGUE-DAO\PPE-LIGUE-DAO\obj\Debug\PPE_LIGUE_DAO.LoginForm.resources
