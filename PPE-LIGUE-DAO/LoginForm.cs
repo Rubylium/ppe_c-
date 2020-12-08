@@ -12,12 +12,23 @@ namespace PPE_LIGUE_DAO
 
         private void buttonConnect_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Login Réussi!");
-            main fm = new main();
+            String login = boxLogin.Text;
+            String mdp = boxMdp.Text;
 
+            bool didLogin = loginDAO.TryLogin(login, mdp);
 
-            this.Hide();
-            fm.Show();
+            if (didLogin)
+            {
+                this.Hide();
+                MessageBox.Show("Login Réussi!");
+                main fm = new main();
+                fm.Show();
+            }
+            else
+            {
+                MessageBox.Show("Login Invalide!");
+            }
+            
         }
     }
 }

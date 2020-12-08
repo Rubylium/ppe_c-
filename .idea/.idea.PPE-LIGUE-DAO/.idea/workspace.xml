@@ -23,10 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9b4fdb8-417f-4859-82db-19a496b961bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/LoginForm.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/LoginXForm.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/LoginXForm.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/Form1.resx" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/LoginXForm.resx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/loginDAO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PPE-LIGUE-DAO/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PPE-LIGUE-DAO/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PPE-LIGUE-DAO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PPE-LIGUE-DAO/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/DAOFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/DAOFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/LoginForm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/LoginForm.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/PPE-LIGUE-DAO.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/PPE-LIGUE-DAO.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,24 +40,31 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../PPE-DAO/AgenceBancaire-DAO/DAOFactory.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../AgenceBancaire-DAO/AgenceBancaire-DAO/DAOCompteBancaire.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../AgenceBancaire-DAO/AgenceBancaire-DAO/FrmBanque.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/PPE-LIGUE-DAO/DAOFactory.cs" />
         <option value="$PROJECT_DIR$/PPE-LIGUE-DAO/main.cs" />
         <option value="$PROJECT_DIR$/PPE-LIGUE-DAO/Form1.cs" />
+        <option value="$PROJECT_DIR$/PPE-LIGUE-DAO/Program.cs" />
+        <option value="$PROJECT_DIR$/PPE-LIGUE-DAO/DAOFactory.cs" />
         <option value="$PROJECT_DIR$/PPE-LIGUE-DAO/LoginForm.cs" />
+        <option value="$PROJECT_DIR$/PPE-LIGUE-DAO/loginDAO.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1lNCHcqNCiXKIuSoMJwgDIhzR83" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -99,7 +107,7 @@
       <workItem from="1607428089283" duration="340000" />
       <workItem from="1607432707303" duration="2694000" />
       <workItem from="1607436615802" duration="654000" />
-      <workItem from="1607437429340" duration="561000" />
+      <workItem from="1607437429340" duration="1762000" />
     </task>
     <servers />
   </component>
@@ -120,25 +128,30 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1607437275592">
+    <state x="348" y="356" key="#SQL_Dialects" timestamp="1607439207431">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607437275592" />
-    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1607437275592">
+    <state x="348" y="356" key="#SQL_Dialects/0.0.1920.1040@0.0.1920.1040" timestamp="1607439207431" />
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom" timestamp="1607438262557">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607437275592" />
-    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1607437275592">
+    <state width="1877" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607438262557" />
+    <state width="1877" height="275" key="GridCell.Tab.0.center" timestamp="1607438262557">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607437275592" />
-    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1607437275592">
+    <state width="1877" height="275" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607438262557" />
+    <state width="1877" height="275" key="GridCell.Tab.0.left" timestamp="1607438262557">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607437275592" />
+    <state width="1877" height="275" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607438262557" />
+    <state width="1877" height="275" key="GridCell.Tab.0.right" timestamp="1607438262557">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="275" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607438262557" />
     <state x="835" y="469" key="Items removing confirmation dialog" timestamp="1607434482382">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
