@@ -20,9 +20,9 @@ namespace PPE_LIGUE_DAO
             if (didLogin)
             {
                 this.Hide();
-                MessageBox.Show("Login Réussi!");
                 main fm = new main();
                 fm.Show();
+                MessageBox.Show("Login Réussi!");
             }
             else
             {

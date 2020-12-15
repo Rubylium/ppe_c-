@@ -11,7 +11,7 @@ namespace PPE_LIGUE_DAO
     {
         public static bool TryLogin(String login, String password)
         {
-            string req = "Select * from utilisateur where login = " + login + " and password = " + password;
+            string req = "SELECT * FROM utilisateur WHERE login = '" + login + "' AND password = '" + password + "'";
             DAOFactory db = new DAOFactory();
             db.connecter();
             
