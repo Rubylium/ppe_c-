@@ -1,0 +1,6 @@
+Table stand:
+	Occupant ( Id partenaire )
+	Surface
+	Situation ( num allée, num ordre )
+	Ses équipement ( Liaison avec une table équipement ? )
+	Montant Facturé ( Selon si la personne est équipementier ou asso )
