@@ -14,7 +14,7 @@ namespace PPE_LIGUE_DAO
         public DAOFactory()
         {
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-            builder.DataSource = "DESKTOP-BL4PND2\\SQLEXPRESS";
+            builder.DataSource = "DESKTOP-Q92NK0M\\SQLEXPRESS";
             builder.IntegratedSecurity = true;
             builder.InitialCatalog = "ligue";
             Console.WriteLine("Connexion info created : " + builder.ConnectionString);

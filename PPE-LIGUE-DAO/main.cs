@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace PPE_LIGUE_DAO
@@ -10,13 +11,20 @@ namespace PPE_LIGUE_DAO
             InitializeComponent();
         }
 
-        public void CreateStand()
+        public void GetAllPartenaire()
         {
             DAOFactory db = new DAOFactory();
             db.connecter();
-            string req = "INSERT INTO stand VALUES ";
+            string req = "SELECT * FROM partenaire";
 
-            db.execSQLWrite(req);
+            SqlDataReader reader = db.excecSQLRead(req);
+
+            while (reader.Read())
+            {
+                
+            }
+
+            db.deconnecter();
         }
     }
 }

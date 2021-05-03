@@ -18,3 +18,14 @@ C:\Users\Alexis\Documents\dev\ppe\c#\ppe_c-\PPE-LIGUE-DAO\obj\Debug\PPE-LIGUE-DA
 C:\Users\Alexis\Documents\dev\ppe\c#\ppe_c-\PPE-LIGUE-DAO\obj\Debug\PPE-LIGUE-DAO.exe
 C:\Users\Alexis\Documents\dev\ppe\c#\ppe_c-\PPE-LIGUE-DAO\obj\Debug\PPE-LIGUE-DAO.pdb
 C:\Users\Alexis\Documents\dev\ppe\c#\ppe_c-\PPE-LIGUE-DAO\obj\Debug\PPE_LIGUE_DAO.main.resources
+C:\Users\ruby\Documents\work\ppe_c-\PPE-LIGUE-DAO\bin\Debug\PPE-LIGUE-DAO.exe.config
+C:\Users\ruby\Documents\work\ppe_c-\PPE-LIGUE-DAO\bin\Debug\PPE-LIGUE-DAO.exe
+C:\Users\ruby\Documents\work\ppe_c-\PPE-LIGUE-DAO\bin\Debug\PPE-LIGUE-DAO.pdb
+C:\Users\ruby\Documents\work\ppe_c-\PPE-LIGUE-DAO\obj\Debug\PPE-LIGUE-DAO.csprojAssemblyReference.cache
+C:\Users\ruby\Documents\work\ppe_c-\PPE-LIGUE-DAO\obj\Debug\PPE_LIGUE_DAO.LoginForm.resources
+C:\Users\ruby\Documents\work\ppe_c-\PPE-LIGUE-DAO\obj\Debug\PPE_LIGUE_DAO.main.resources
+C:\Users\ruby\Documents\work\ppe_c-\PPE-LIGUE-DAO\obj\Debug\PPE_LIGUE_DAO.Properties.Resources.resources
+C:\Users\ruby\Documents\work\ppe_c-\PPE-LIGUE-DAO\obj\Debug\PPE-LIGUE-DAO.csproj.GenerateResource.cache
+C:\Users\ruby\Documents\work\ppe_c-\PPE-LIGUE-DAO\obj\Debug\PPE-LIGUE-DAO.csproj.CoreCompileInputs.cache
+C:\Users\ruby\Documents\work\ppe_c-\PPE-LIGUE-DAO\obj\Debug\PPE-LIGUE-DAO.exe
+C:\Users\ruby\Documents\work\ppe_c-\PPE-LIGUE-DAO\obj\Debug\PPE-LIGUE-DAO.pdb

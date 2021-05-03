@@ -23,8 +23,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9b4fdb8-417f-4859-82db-19a496b961bc" name="Default Changelist" comment="Update UI">
+      <change afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/TypePartenaire.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/partenaire.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PPE-LIGUE-DAO/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PPE-LIGUE-DAO/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PPE-LIGUE-DAO/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PPE-LIGUE-DAO/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PPE-LIGUE-DAO/.idea/riderModule.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PPE-LIGUE-DAO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PPE-LIGUE-DAO/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PPE-LIGUE-DAO/riderModule.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/PPE-LIGUE-DAO/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/PPE-LIGUE-DAO/v16/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/DAOFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/DAOFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/PPE-LIGUE-DAO.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/PPE-LIGUE-DAO.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/bin/Debug/PPE-LIGUE-DAO.exe" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/bin/Debug/PPE-LIGUE-DAO.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/bin/Debug/PPE-LIGUE-DAO.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/bin/Debug/PPE-LIGUE-DAO.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/main.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE-LIGUE-DAO.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE-LIGUE-DAO.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE-LIGUE-DAO.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE-LIGUE-DAO.csproj.GenerateResource.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE-LIGUE-DAO.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE-LIGUE-DAO.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE-LIGUE-DAO.exe" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE-LIGUE-DAO.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE-LIGUE-DAO.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE-LIGUE-DAO.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +59,8 @@
       <option value="$PROJECT_DIR$/PPE-LIGUE-DAO/DAOFactory.cs" />
       <option value="$PROJECT_DIR$/PPE-LIGUE-DAO/main.Designer.cs" />
       <option value="$PROJECT_DIR$/PPE-LIGUE-DAO/main.cs" />
+      <option value="$PROJECT_DIR$/PPE-LIGUE-DAO/partenaire.cs" />
+      <option value="$PROJECT_DIR$/PPE-LIGUE-DAO/TypePartenaire.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1lNCHcqNCiXKIuSoMJwgDIhzR83" />
@@ -64,7 +83,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -104,6 +123,7 @@
       <workItem from="1614089223688" duration="458000" />
       <workItem from="1614090331821" duration="2968000" />
       <workItem from="1614094915757" duration="3911000" />
+      <workItem from="1620046747757" duration="1427000" />
     </task>
     <task id="LOCAL-00001" summary="Update UI">
       <created>1614096165239</created>
