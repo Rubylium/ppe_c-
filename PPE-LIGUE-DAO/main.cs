@@ -7,12 +7,29 @@ namespace PPE_LIGUE_DAO
 {
     public partial class main : Form
     {
+        private List<Partenaire> lesPartenaires = new List<Partenaire>();
+        private List<TypePartenaire> lesType = new List<TypePartenaire>();
         public main()
         {
             InitializeComponent();
+            this.LoadCreationPartenaireData();
         }
 
-        public List<Partenaire> GetAllPartenaire()
+        public void LoadCreationPartenaireData()
+        {
+            GetAllPartenaire();
+            GetAllTypePartenaire();
+            
+            ComboTypePart.Items.Clear();
+            foreach (var v in this.lesPartenaires)
+            {
+                ComboTypePart.Items.Add(v.GetLabel());
+            }
+            
+        }
+
+
+        public void GetAllPartenaire()
         {
             DAOFactory db = new DAOFactory();
             db.connecter();
@@ -28,10 +45,10 @@ namespace PPE_LIGUE_DAO
             }
 
             db.deconnecter();
-            return lesPartenaires;
+            this.lesPartenaires = lesPartenaires;
         }
         
-        public List<TypePartenaire> GetAllTypePartenaire()
+        public void GetAllTypePartenaire()
         {
             DAOFactory db = new DAOFactory();
             db.connecter();
@@ -43,11 +60,11 @@ namespace PPE_LIGUE_DAO
             while (reader.Read())
             {
                 TypePartenaire part = new TypePartenaire(Int32.Parse(reader[0].ToString()), reader[1].ToString());
-                TypePartenaire.Add(part);
+                lesTypes.Add(part);
             }
 
             db.deconnecter();
-            return lesTypes;
+            this.lesType = lesTypes;
         }
     }
 }
