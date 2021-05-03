@@ -23,12 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9b4fdb8-417f-4859-82db-19a496b961bc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.PPE-LIGUE-DAO/.idea/discord.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.PPE-LIGUE-DAO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PPE-LIGUE-DAO/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/bin/Debug/PPE-LIGUE-DAO.exe" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/bin/Debug/PPE-LIGUE-DAO.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/bin/Debug/PPE-LIGUE-DAO.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/bin/Debug/PPE-LIGUE-DAO.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/main.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/main.Designer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/main.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE-LIGUE-DAO.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE-LIGUE-DAO.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE-LIGUE-DAO.exe" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE-LIGUE-DAO.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE-LIGUE-DAO.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE-LIGUE-DAO.pdb" afterDir="false" />
     </list>
@@ -64,8 +64,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -74,7 +78,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -115,6 +119,8 @@
       <workItem from="1614090331821" duration="2968000" />
       <workItem from="1614094915757" duration="3911000" />
       <workItem from="1620046747757" duration="5341000" />
+      <workItem from="1620052109154" duration="698000" />
+      <workItem from="1620052822762" duration="2101000" />
     </task>
     <task id="LOCAL-00001" summary="Update UI">
       <created>1614096165239</created>

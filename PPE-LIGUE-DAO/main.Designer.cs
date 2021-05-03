@@ -41,7 +41,7 @@ namespace PPE_LIGUE_DAO
             this.ComboTypePart = new System.Windows.Forms.ComboBox();
             this.BtnCreationPartenaire = new System.Windows.Forms.Button();
             this.LabelCreationPartenaire = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TxtBoxCreatePartName = new System.Windows.Forms.TextBox();
             this.tabAffectStand = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabCreatePartenaire.SuspendLayout();
@@ -93,7 +93,7 @@ namespace PPE_LIGUE_DAO
             this.tabCreatePartenaire.Controls.Add(this.ComboTypePart);
             this.tabCreatePartenaire.Controls.Add(this.BtnCreationPartenaire);
             this.tabCreatePartenaire.Controls.Add(this.LabelCreationPartenaire);
-            this.tabCreatePartenaire.Controls.Add(this.textBox1);
+            this.tabCreatePartenaire.Controls.Add(this.TxtBoxCreatePartName);
             this.tabCreatePartenaire.Location = new System.Drawing.Point(4, 22);
             this.tabCreatePartenaire.Margin = new System.Windows.Forms.Padding(2);
             this.tabCreatePartenaire.Name = "tabCreatePartenaire";
@@ -127,6 +127,7 @@ namespace PPE_LIGUE_DAO
             this.BtnCreationPartenaire.TabIndex = 2;
             this.BtnCreationPartenaire.Text = "Créer";
             this.BtnCreationPartenaire.UseVisualStyleBackColor = true;
+            this.BtnCreationPartenaire.Click += new System.EventHandler(this.BtnCreationPartenaire_Click);
             // 
             // LabelCreationPartenaire
             // 
@@ -136,12 +137,12 @@ namespace PPE_LIGUE_DAO
             this.LabelCreationPartenaire.TabIndex = 1;
             this.LabelCreationPartenaire.Text = "Nom du partenaire";
             // 
-            // textBox1
+            // TxtBoxCreatePartName
             // 
-            this.textBox1.Location = new System.Drawing.Point(207, 129);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(136, 20);
-            this.textBox1.TabIndex = 0;
+            this.TxtBoxCreatePartName.Location = new System.Drawing.Point(207, 129);
+            this.TxtBoxCreatePartName.Name = "TxtBoxCreatePartName";
+            this.TxtBoxCreatePartName.Size = new System.Drawing.Size(136, 20);
+            this.TxtBoxCreatePartName.TabIndex = 0;
             // 
             // tabAffectStand
             // 
@@ -167,6 +168,8 @@ namespace PPE_LIGUE_DAO
             this.tabCreatePartenaire.PerformLayout();
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.TextBox TxtBoxCreatePartName;
 
         private System.Windows.Forms.ComboBox ComboTypePart;
         
