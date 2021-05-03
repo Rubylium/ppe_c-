@@ -1,10 +1,10 @@
 ﻿namespace PPE_LIGUE_DAO
 {
-    public class partenaire
+    public class Partenaire
     {
         private int id;
         private string label;
-        public partenaire(int id, string label)
+        public Partenaire(int id, string label)
         {
             this.id = id;
             this.label = label;
