@@ -9,5 +9,14 @@ namespace PPE_LIGUE_DAO
         {
             InitializeComponent();
         }
+
+        public void CreateStand()
+        {
+            DAOFactory db = new DAOFactory();
+            db.connecter();
+            string req = "INSERT INTO stand VALUES ";
+
+            db.execSQLWrite(req);
+        }
     }
 }
