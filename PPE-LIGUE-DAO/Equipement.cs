@@ -1,15 +1,13 @@
 ﻿namespace PPE_LIGUE_DAO
 {
-    public class Partenaire
+    public class Equipement
     {
         private int id;
         private string label;
-        private int idPartenaire;
-        public Partenaire(int id, string label, int IdPartenaire)
+        public Equipement(int id, string label)
         {
             this.id = id;
             this.label = label;
-            this.idPartenaire = IdPartenaire;
         }
 
         public int GetId()
@@ -22,9 +20,5 @@
             return this.label;
         }
 
-        public int GetIdPartenaire()
-        {
-            return this.idPartenaire;
-        }
     }
 }

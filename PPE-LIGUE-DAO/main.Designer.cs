@@ -43,8 +43,21 @@ namespace PPE_LIGUE_DAO
             this.LabelCreationPartenaire = new System.Windows.Forms.Label();
             this.TxtBoxCreatePartName = new System.Windows.Forms.TextBox();
             this.tabAffectStand = new System.Windows.Forms.TabPage();
+            this.BtnAffect = new System.Windows.Forms.Button();
+            this.DataGridViewAffect = new System.Windows.Forms.DataGridView();
+            this.idStand = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.alle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ordre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.surface = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.attrib = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.ComboAffectPartenaire = new System.Windows.Forms.ComboBox();
+            this.LabelAffectStandList = new System.Windows.Forms.Label();
+            this.ComboAffectStand = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabCreatePartenaire.SuspendLayout();
+            this.tabAffectStand.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize) (this.DataGridViewAffect)).BeginInit();
             this.SuspendLayout();
             // 
             // créationPartenaireToolStripMenuItem
@@ -146,6 +159,12 @@ namespace PPE_LIGUE_DAO
             // 
             // tabAffectStand
             // 
+            this.tabAffectStand.Controls.Add(this.BtnAffect);
+            this.tabAffectStand.Controls.Add(this.DataGridViewAffect);
+            this.tabAffectStand.Controls.Add(this.label1);
+            this.tabAffectStand.Controls.Add(this.ComboAffectPartenaire);
+            this.tabAffectStand.Controls.Add(this.LabelAffectStandList);
+            this.tabAffectStand.Controls.Add(this.ComboAffectStand);
             this.tabAffectStand.Location = new System.Drawing.Point(4, 22);
             this.tabAffectStand.Margin = new System.Windows.Forms.Padding(2);
             this.tabAffectStand.Name = "tabAffectStand";
@@ -153,6 +172,82 @@ namespace PPE_LIGUE_DAO
             this.tabAffectStand.TabIndex = 2;
             this.tabAffectStand.Text = "Affectation Stands";
             this.tabAffectStand.UseVisualStyleBackColor = true;
+            // 
+            // BtnAffect
+            // 
+            this.BtnAffect.Location = new System.Drawing.Point(377, 35);
+            this.BtnAffect.Name = "BtnAffect";
+            this.BtnAffect.Size = new System.Drawing.Size(169, 61);
+            this.BtnAffect.TabIndex = 5;
+            this.BtnAffect.Text = "Affecter";
+            this.BtnAffect.UseVisualStyleBackColor = true;
+            this.BtnAffect.Click += new System.EventHandler(this.BtnAffect_Click);
+            // 
+            // DataGridViewAffect
+            // 
+            this.DataGridViewAffect.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridViewAffect.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {this.idStand, this.alle, this.ordre, this.surface, this.attrib});
+            this.DataGridViewAffect.Location = new System.Drawing.Point(21, 119);
+            this.DataGridViewAffect.Name = "DataGridViewAffect";
+            this.DataGridViewAffect.Size = new System.Drawing.Size(545, 192);
+            this.DataGridViewAffect.TabIndex = 4;
+            // 
+            // idStand
+            // 
+            this.idStand.HeaderText = "Id Stand";
+            this.idStand.Name = "idStand";
+            // 
+            // alle
+            // 
+            this.alle.HeaderText = "n°d’allée";
+            this.alle.Name = "alle";
+            // 
+            // ordre
+            // 
+            this.ordre.HeaderText = "n°d\'ordre";
+            this.ordre.Name = "ordre";
+            // 
+            // surface
+            // 
+            this.surface.HeaderText = "Surface";
+            this.surface.Name = "surface";
+            // 
+            // attrib
+            // 
+            this.attrib.HeaderText = "Partenaire";
+            this.attrib.Name = "attrib";
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(163, 78);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(62, 23);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Partenaires";
+            // 
+            // ComboAffectPartenaire
+            // 
+            this.ComboAffectPartenaire.FormattingEnabled = true;
+            this.ComboAffectPartenaire.Location = new System.Drawing.Point(231, 75);
+            this.ComboAffectPartenaire.Name = "ComboAffectPartenaire";
+            this.ComboAffectPartenaire.Size = new System.Drawing.Size(121, 21);
+            this.ComboAffectPartenaire.TabIndex = 2;
+            // 
+            // LabelAffectStandList
+            // 
+            this.LabelAffectStandList.Location = new System.Drawing.Point(181, 38);
+            this.LabelAffectStandList.Name = "LabelAffectStandList";
+            this.LabelAffectStandList.Size = new System.Drawing.Size(44, 23);
+            this.LabelAffectStandList.TabIndex = 1;
+            this.LabelAffectStandList.Text = "Stands";
+            // 
+            // ComboAffectStand
+            // 
+            this.ComboAffectStand.FormattingEnabled = true;
+            this.ComboAffectStand.Location = new System.Drawing.Point(231, 35);
+            this.ComboAffectStand.Name = "ComboAffectStand";
+            this.ComboAffectStand.Size = new System.Drawing.Size(121, 21);
+            this.ComboAffectStand.TabIndex = 0;
             // 
             // main
             // 
@@ -166,8 +261,32 @@ namespace PPE_LIGUE_DAO
             this.tabControl1.ResumeLayout(false);
             this.tabCreatePartenaire.ResumeLayout(false);
             this.tabCreatePartenaire.PerformLayout();
+            this.tabAffectStand.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize) (this.DataGridViewAffect)).EndInit();
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.Button BtnAffect;
+
+        private System.Windows.Forms.DataGridViewTextBoxColumn alle;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ordre;
+
+        private System.Windows.Forms.DataGridView DataGridViewAffect;
+
+        private System.Windows.Forms.DataGridViewTextBoxColumn idStand;
+        private System.Windows.Forms.DataGridViewTextBoxColumn surface;
+        private System.Windows.Forms.DataGridViewTextBoxColumn attrib;
+
+        private System.Windows.Forms.DataGridView dataGridView1;
+
+        private System.Windows.Forms.ComboBox ComboAffectStand;
+
+        private System.Windows.Forms.ComboBox ComboAffectPartenaire;
+
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label LabelAffectStandList;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label1;
 
         private System.Windows.Forms.TextBox TxtBoxCreatePartName;
 

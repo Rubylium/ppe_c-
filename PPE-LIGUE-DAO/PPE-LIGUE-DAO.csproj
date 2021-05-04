@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAOFactory.cs" />
+    <Compile Include="Equipement.cs" />
     <Compile Include="loginDAO.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -63,6 +64,7 @@
     <Compile Include="Partenaire.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stands.cs" />
     <Compile Include="TypePartenaire.cs" />
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
