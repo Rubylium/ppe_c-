@@ -34,6 +34,9 @@ namespace PPE_LIGUE_DAO
             ComboAffectPartenaire.ResetText();
             DataGridViewAffect.Rows.Clear();
             lesEquipementDeStand.Clear();
+            lesEquipementWithId.Clear();
+            lesFuturEquipement.Clear();
+            ComboListStandes.Items.Clear();
 
             
             GetAllPartenaire();
@@ -381,16 +384,15 @@ namespace PPE_LIGUE_DAO
         private void ComboListStandes_SelectedIndexChanged(object sender, EventArgs e)
         {
             var index = ComboListStandes.SelectedItem.ToString();
-            var equipement = "TEST-";
+            var equipement = "";
             foreach (var v in this.lesEquipementDeStand)
             {
                 if (v.GetIdStand().ToString() == index)
                 {
-                    MessageBox.Show(v.GetIdEquipement().ToString()); 
-                    //if (lesEquipementWithId.ContainsKey(v.GetIdEquipement()))
-                    //{
-                        equipement = equipement + "\n" + lesEquipementWithId[v.GetIdEquipement()].GetLabel(); 
-                    //}
+                    if (lesEquipementWithId.ContainsKey(v.GetIdEquipement())) // To avoid crash if equipement is deleted later but for some reason still loaded
+                    {
+                        equipement = equipement + "\n- " + lesEquipementWithId[v.GetIdEquipement()].GetLabel(); 
+                    }
                     
                 }
             }

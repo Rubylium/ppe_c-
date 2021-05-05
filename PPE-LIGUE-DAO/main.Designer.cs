@@ -410,7 +410,7 @@ namespace PPE_LIGUE_DAO
             // 
             this.LblEquipement.Location = new System.Drawing.Point(470, 108);
             this.LblEquipement.Name = "LblEquipement";
-            this.LblEquipement.Size = new System.Drawing.Size(100, 23);
+            this.LblEquipement.Size = new System.Drawing.Size(300, 275);
             this.LblEquipement.TabIndex = 2;
             this.LblEquipement.Text = "0";
             // 

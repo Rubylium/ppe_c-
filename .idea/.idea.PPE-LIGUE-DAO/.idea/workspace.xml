@@ -22,7 +22,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9b4fdb8-417f-4859-82db-19a496b961bc" name="Default Changelist" comment="" />
+    <list default="true" id="d9b4fdb8-417f-4859-82db-19a496b961bc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PPE-LIGUE-DAO/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PPE-LIGUE-DAO/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/bin/Debug/PPE-LIGUE-DAO.exe" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/bin/Debug/PPE-LIGUE-DAO.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/bin/Debug/PPE-LIGUE-DAO.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/bin/Debug/PPE-LIGUE-DAO.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/main.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/main.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/main.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/main.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE-LIGUE-DAO.exe" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE-LIGUE-DAO.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE-LIGUE-DAO.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PPE-LIGUE-DAO/obj/Debug/PPE-LIGUE-DAO.pdb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,8 +52,8 @@
       <option value="$PROJECT_DIR$/PPE-LIGUE-DAO/EquipementStand.cs" />
       <option value="$PROJECT_DIR$/PPE-LIGUE-DAO/Stands.cs" />
       <option value="$PROJECT_DIR$/PPE-LIGUE-DAO/main.Designer.cs" />
-      <option value="$PROJECT_DIR$/PPE-LIGUE-DAO/main.cs" />
       <option value="$PROJECT_DIR$/PPE-LIGUE-DAO/LoginForm.cs" />
+      <option value="$PROJECT_DIR$/PPE-LIGUE-DAO/main.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1lNCHcqNCiXKIuSoMJwgDIhzR83" />
@@ -118,7 +126,7 @@
       <workItem from="1620130897297" duration="4379000" />
       <workItem from="1620135672470" duration="7712000" />
       <workItem from="1620212948550" duration="14947000" />
-      <workItem from="1620228002529" duration="3254000" />
+      <workItem from="1620228002529" duration="3916000" />
     </task>
     <task id="LOCAL-00001" summary="Update UI">
       <created>1614096165239</created>
