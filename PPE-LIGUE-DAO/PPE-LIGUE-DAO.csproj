@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="DAOFactory.cs" />
     <Compile Include="Equipement.cs" />
+    <Compile Include="EquipementStand.cs" />
     <Compile Include="loginDAO.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>

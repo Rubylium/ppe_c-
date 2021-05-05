@@ -1,4 +1,7 @@
-﻿namespace PPE_LIGUE_DAO
+﻿using System;
+using System.Collections.Generic;
+
+namespace PPE_LIGUE_DAO
 {
     public class Stands
     {
@@ -7,6 +10,7 @@
         private int nAlle;
         private int nOrdre;
         private int id;
+        private List<String> equipement = new List<string>();
         public Stands(int idPartenaire, string surface, int nAlle, int nOrdre, int id)
         {
              this.idPartenaire = idPartenaire;
@@ -41,5 +45,15 @@
             return this.nOrdre;
         }
 
+        public void AddNewEquipement(Int32 idEquipement)
+        {
+            this.equipement.Add(idEquipement.ToString());
+        }
+
+        public List<String> GetEquipement()
+        {
+            return this.equipement;
+        }
+        
     }
 }

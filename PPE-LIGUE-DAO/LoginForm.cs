@@ -8,6 +8,7 @@ namespace PPE_LIGUE_DAO
         public LoginForm()
         {
             InitializeComponent();
+            boxMdp.PasswordChar = '*';
         }
 
         private void buttonConnect_Click(object sender, EventArgs e)
