@@ -7,6 +7,7 @@ namespace PPE_LIGUE_DAO
     {
         public LoginForm()
         {
+            this.StartPosition = FormStartPosition.CenterScreen;
             InitializeComponent();
             boxMdp.PasswordChar = '*';
         }
@@ -22,6 +23,7 @@ namespace PPE_LIGUE_DAO
             {
                 this.Hide();
                 main fm = new main();
+                fm.StartPosition = FormStartPosition.CenterScreen;
                 fm.Show();
                 MessageBox.Show("Login Réussi!");
             }

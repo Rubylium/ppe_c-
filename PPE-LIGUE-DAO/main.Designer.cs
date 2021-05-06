@@ -68,6 +68,12 @@ namespace PPE_LIGUE_DAO
             this.LabelAffectStandList = new System.Windows.Forms.Label();
             this.ComboAffectStand = new System.Windows.Forms.ComboBox();
             this.tabListStands = new System.Windows.Forms.TabPage();
+            this.LblListOrdre = new System.Windows.Forms.Label();
+            this.LblListAlle = new System.Windows.Forms.Label();
+            this.LblListSurface = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.LblEquipement = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.ComboListStandes = new System.Windows.Forms.ComboBox();
@@ -261,7 +267,7 @@ namespace PPE_LIGUE_DAO
             // 
             // LabelCreationPartenaireType
             // 
-            this.LabelCreationPartenaireType.Location = new System.Drawing.Point(101, 90);
+            this.LabelCreationPartenaireType.Location = new System.Drawing.Point(217, 127);
             this.LabelCreationPartenaireType.Name = "LabelCreationPartenaireType";
             this.LabelCreationPartenaireType.Size = new System.Drawing.Size(100, 21);
             this.LabelCreationPartenaireType.TabIndex = 4;
@@ -271,14 +277,14 @@ namespace PPE_LIGUE_DAO
             // 
             this.ComboTypePart.FormattingEnabled = true;
             this.ComboTypePart.Items.AddRange(new object[] {"test, tes2"});
-            this.ComboTypePart.Location = new System.Drawing.Point(207, 87);
+            this.ComboTypePart.Location = new System.Drawing.Point(323, 124);
             this.ComboTypePart.Name = "ComboTypePart";
             this.ComboTypePart.Size = new System.Drawing.Size(136, 21);
             this.ComboTypePart.TabIndex = 3;
             // 
             // BtnCreationPartenaire
             // 
-            this.BtnCreationPartenaire.Location = new System.Drawing.Point(207, 164);
+            this.BtnCreationPartenaire.Location = new System.Drawing.Point(323, 201);
             this.BtnCreationPartenaire.Name = "BtnCreationPartenaire";
             this.BtnCreationPartenaire.Size = new System.Drawing.Size(136, 40);
             this.BtnCreationPartenaire.TabIndex = 2;
@@ -288,7 +294,7 @@ namespace PPE_LIGUE_DAO
             // 
             // LabelCreationPartenaire
             // 
-            this.LabelCreationPartenaire.Location = new System.Drawing.Point(101, 132);
+            this.LabelCreationPartenaire.Location = new System.Drawing.Point(217, 169);
             this.LabelCreationPartenaire.Name = "LabelCreationPartenaire";
             this.LabelCreationPartenaire.Size = new System.Drawing.Size(100, 20);
             this.LabelCreationPartenaire.TabIndex = 1;
@@ -296,7 +302,7 @@ namespace PPE_LIGUE_DAO
             // 
             // TxtBoxCreatePartName
             // 
-            this.TxtBoxCreatePartName.Location = new System.Drawing.Point(207, 129);
+            this.TxtBoxCreatePartName.Location = new System.Drawing.Point(323, 166);
             this.TxtBoxCreatePartName.Name = "TxtBoxCreatePartName";
             this.TxtBoxCreatePartName.Size = new System.Drawing.Size(136, 20);
             this.TxtBoxCreatePartName.TabIndex = 0;
@@ -331,9 +337,9 @@ namespace PPE_LIGUE_DAO
             // 
             this.DataGridViewAffect.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataGridViewAffect.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {this.idStand, this.alle, this.ordre, this.surface, this.attrib});
-            this.DataGridViewAffect.Location = new System.Drawing.Point(21, 119);
+            this.DataGridViewAffect.Location = new System.Drawing.Point(92, 117);
             this.DataGridViewAffect.Name = "DataGridViewAffect";
-            this.DataGridViewAffect.Size = new System.Drawing.Size(643, 192);
+            this.DataGridViewAffect.Size = new System.Drawing.Size(544, 192);
             this.DataGridViewAffect.TabIndex = 4;
             // 
             // idStand
@@ -395,6 +401,12 @@ namespace PPE_LIGUE_DAO
             // 
             // tabListStands
             // 
+            this.tabListStands.Controls.Add(this.LblListOrdre);
+            this.tabListStands.Controls.Add(this.LblListAlle);
+            this.tabListStands.Controls.Add(this.LblListSurface);
+            this.tabListStands.Controls.Add(this.label9);
+            this.tabListStands.Controls.Add(this.label8);
+            this.tabListStands.Controls.Add(this.label7);
             this.tabListStands.Controls.Add(this.LblEquipement);
             this.tabListStands.Controls.Add(this.label6);
             this.tabListStands.Controls.Add(this.ComboListStandes);
@@ -403,12 +415,69 @@ namespace PPE_LIGUE_DAO
             this.tabListStands.Padding = new System.Windows.Forms.Padding(3);
             this.tabListStands.Size = new System.Drawing.Size(776, 386);
             this.tabListStands.TabIndex = 3;
-            this.tabListStands.Text = "Listes des standes";
+            this.tabListStands.Text = "Liste des stands";
             this.tabListStands.UseVisualStyleBackColor = true;
+            // 
+            // LblListOrdre
+            // 
+            this.LblListOrdre.Location = new System.Drawing.Point(301, 152);
+            this.LblListOrdre.Name = "LblListOrdre";
+            this.LblListOrdre.Size = new System.Drawing.Size(121, 23);
+            this.LblListOrdre.TabIndex = 8;
+            this.LblListOrdre.Text = "Rien selectioné";
+            this.LblListOrdre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LblListAlle
+            // 
+            this.LblListAlle.Location = new System.Drawing.Point(167, 152);
+            this.LblListAlle.Name = "LblListAlle";
+            this.LblListAlle.Size = new System.Drawing.Size(106, 23);
+            this.LblListAlle.TabIndex = 7;
+            this.LblListAlle.Text = "Rien selectioné";
+            this.LblListAlle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // LblListSurface
+            // 
+            this.LblListSurface.Location = new System.Drawing.Point(20, 152);
+            this.LblListSurface.Name = "LblListSurface";
+            this.LblListSurface.Size = new System.Drawing.Size(106, 23);
+            this.LblListSurface.TabIndex = 6;
+            this.LblListSurface.Text = "Rien selectioné";
+            this.LblListSurface.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label9
+            // 
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label9.Location = new System.Drawing.Point(301, 129);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(121, 23);
+            this.label9.TabIndex = 5;
+            this.label9.Text = "Numéro d\'ordre";
+            this.label9.UseMnemonic = false;
+            // 
+            // label8
+            // 
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label8.Location = new System.Drawing.Point(157, 129);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(116, 23);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "Numéro d\'allée";
+            this.label8.UseMnemonic = false;
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label7.Location = new System.Drawing.Point(41, 129);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(110, 23);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "Surface";
+            this.label7.UseMnemonic = false;
             // 
             // LblEquipement
             // 
-            this.LblEquipement.Location = new System.Drawing.Point(470, 108);
+            this.LblEquipement.Location = new System.Drawing.Point(474, 156);
             this.LblEquipement.Name = "LblEquipement";
             this.LblEquipement.Size = new System.Drawing.Size(300, 275);
             this.LblEquipement.TabIndex = 2;
@@ -417,7 +486,7 @@ namespace PPE_LIGUE_DAO
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label6.Location = new System.Drawing.Point(470, 63);
+            this.label6.Location = new System.Drawing.Point(474, 129);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(144, 23);
             this.label6.TabIndex = 1;
@@ -427,7 +496,7 @@ namespace PPE_LIGUE_DAO
             // ComboListStandes
             // 
             this.ComboListStandes.FormattingEnabled = true;
-            this.ComboListStandes.Location = new System.Drawing.Point(27, 65);
+            this.ComboListStandes.Location = new System.Drawing.Point(41, 32);
             this.ComboListStandes.Name = "ComboListStandes";
             this.ComboListStandes.Size = new System.Drawing.Size(337, 21);
             this.ComboListStandes.TabIndex = 0;
@@ -452,6 +521,16 @@ namespace PPE_LIGUE_DAO
             this.tabListStands.ResumeLayout(false);
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.Label LblListOrdre;
+
+        private System.Windows.Forms.Label LblListAlle;
+
+        private System.Windows.Forms.Label LblListSurface;
+
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
 
         private System.Windows.Forms.Label LblEquipement;
 

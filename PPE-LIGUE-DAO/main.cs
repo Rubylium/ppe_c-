@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace PPE_LIGUE_DAO
@@ -74,7 +75,7 @@ namespace PPE_LIGUE_DAO
             foreach (var v in this.lesStands)
             {
                 ComboAffectStand.Items.Add(v.Value.GetId());
-                DataGridViewAffect.Rows.Add(v.Value.GetId(), v.Value.GetnAlle(), v.Value.GetnOrdre(), v.Value.GetSurface(), GetPartenaireLabelById(v.Value.GetIdPartenaire()));
+                DataGridViewAffect.Rows.Add(v.Value.GetId(), v.Value.GetnAlle(), v.Value.GetnOrdre(), v.Value.GetSurface() + "m", GetPartenaireLabelById(v.Value.GetIdPartenaire()));
                 ComboListStandes.Items.Add(v.Value.GetId());
             }
 
@@ -340,6 +341,42 @@ namespace PPE_LIGUE_DAO
             var alle = TxtBoxAlle.Text;
             var ordre = TxtBoxOrdre.Text;
 
+            if (surface == "")
+            {
+                MessageBox.Show("La surface entrée est incorrecte, seul un nombre est accepté");
+                return;
+            }
+            
+            if (alle == "")
+            {
+                MessageBox.Show("Le numéro d'allée est incorrecte, seul un nombre est accepté");
+                return;
+            }
+            
+            if (ordre == "")
+            {
+                MessageBox.Show("Le numéro d'ordre est incorrecte, seul un nombre est accepté");
+                return;
+            }
+
+            if (!surface.All(char.IsDigit))
+            {
+                MessageBox.Show("La surface entrée est incorrecte, seul un nombre est accepté");
+                return;
+            }
+            
+            if (!alle.All(char.IsDigit))
+            {
+                MessageBox.Show("Le numéro d'allée est incorrecte, seul un nombre est accepté");
+                return;
+            }
+            
+            if (!ordre.All(char.IsDigit))
+            {
+                MessageBox.Show("Le numéro d'ordre est incorrecte, seul un nombre est accepté");
+                return;
+            }
+
             var equip = "";
             foreach (var v in this.lesFuturEquipement)
             {
@@ -347,7 +384,7 @@ namespace PPE_LIGUE_DAO
             }
             
             
-            MessageBox.Show("Surface: " + surface + "\nAllée: " + alle + "\nOrdre: " + ordre + "\n" + equip);
+            //MessageBox.Show("Surface: " + surface + "\nAllée: " + alle + "\nOrdre: " + ordre + "\n" + equip);
 
             
             DAOFactory db = new DAOFactory();
@@ -359,7 +396,7 @@ namespace PPE_LIGUE_DAO
             GetAllStands();
             var idStand = GetMaxStandId();
 
-            MessageBox.Show("idStand: " + idStand);
+            //MessageBox.Show("idStand: " + idStand);
 
             if (idStand != 0)
             {
@@ -396,8 +433,17 @@ namespace PPE_LIGUE_DAO
                     
                 }
             }
-
             LblEquipement.Text = equipement;
+
+            if (this.lesStands.ContainsKey(Int32.Parse(index)))
+            {
+                var stand = this.lesStands[Int32.Parse(index)];
+                LblListSurface.Text = stand.GetSurface() + "m";
+                LblListAlle.Text = stand.GetnAlle().ToString();
+                LblListOrdre.Text = stand.GetnOrdre().ToString();
+            }
         }
+
+        
     }
 }
