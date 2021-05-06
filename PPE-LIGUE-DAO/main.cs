@@ -318,16 +318,21 @@ namespace PPE_LIGUE_DAO
         {
             
             var label = ComboEquipementStand.SelectedItem.ToString();
-            MessageBox.Show(label);
+            //MessageBox.Show(label);
+            Equipement equipementToRemove = new Equipement(1, "dump");
             foreach (var v in this.lesFuturEquipement)
             {
                 if (v.GetLabel() == label)
                 {
-                    this.lesFuturEquipement.Remove(v);
+                    equipementToRemove = v;
+                    //this.lesFuturEquipement.Remove(v);
                 }
                 
             }
+
+            this.lesFuturEquipement.Remove(equipementToRemove);
             
+            ComboEquipementStand.ResetText();
             ComboEquipementStand.Items.Clear();
             foreach (var v in this.lesFuturEquipement)
             {
