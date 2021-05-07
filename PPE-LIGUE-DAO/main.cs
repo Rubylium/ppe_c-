@@ -24,6 +24,7 @@ namespace PPE_LIGUE_DAO
 
         public void LoadCreationPartenaireData()
         {
+            lesPartenaires.Clear();
             ComboEquipement.Items.Clear();
             ComboEquipementStand.Items.Clear();
             ComboEquipement.ResetText();
@@ -39,12 +40,23 @@ namespace PPE_LIGUE_DAO
             lesFuturEquipement.Clear();
             ComboListStandes.Items.Clear();
 
+
+            this.lesPartenaires = DAOPartenaire.GetAllPartenaire();
             
-            GetAllPartenaire();
-            GetAllTypePartenaire();
-            GetAllEquipement();
-            GetAllStands();
-            GetAllEquipementStand();
+            this.lesTypeParNom.Clear();
+            this.lesType = DAOTypePartenaire.GetAllTypePartenaire();
+            this.lesTypeParNom = DAOTypePartenaire.GetAllTypePartenaireByName();
+
+            this.lesEquipement.Clear();
+            this.lesEquipement = DAOEquipement.GetAllEquipement();
+            this.lesEquipementWithId = DAOEquipement.GetAllEquipementWithId();
+            
+            this.lesStands.Clear();
+            this.lesStands = DAOStands.GetAllStands();
+
+            this.lesEquipementDeStand.Clear();
+            this.lesEquipementDeStand = DAOEquipementStand.GetAllEquipementStand();
+            
             
             foreach (var v in this.lesEquipement)
             {
@@ -95,18 +107,6 @@ namespace PPE_LIGUE_DAO
 
             return id;
         }
-        public int GetPartenaireTypeIdByLabel(string label) // Old function, not used anymore
-        {
-            foreach (var v in this.lesType)
-            {
-                if (v.Value.GetLabel() == label)
-                {
-                    return v.Value.GetId();
-                }
-            }
-
-            return 1; // Default return 
-        }
         public string GetPartenaireLabelById(int id)
         {
             foreach (var v in this.lesPartenaires)
@@ -146,99 +146,6 @@ namespace PPE_LIGUE_DAO
             }
 
             return found;
-        }
-        
-        public void GetAllEquipementStand()
-        {
-            DAOFactory db = new DAOFactory();
-            db.connecter();
-            string req = "SELECT * FROM equipementStand";
-            SqlDataReader reader = db.excecSQLRead(req);
-
-            this.lesEquipementDeStand.Clear();
-
-            while (reader.Read())
-            {
-                EquipementStands equipement = new EquipementStands(Int32.Parse(reader[2].ToString()), Int32.Parse(reader[0].ToString()), Int32.Parse(reader[1].ToString()));
-                this.lesEquipementDeStand.Add(equipement);
-            }
-
-            db.deconnecter();
-        }
-
-        public void GetAllStands()
-        {
-            DAOFactory db = new DAOFactory();
-            db.connecter();
-            string req = "SELECT * FROM stand";
-            SqlDataReader reader = db.excecSQLRead(req);
-
-            this.lesStands.Clear();
-
-            while (reader.Read())
-            {
-                Stands stand = new Stands(Int32.Parse(reader[0].ToString()), reader[1].ToString(), Int32.Parse(reader[2].ToString()), Int32.Parse(reader[3].ToString()), Int32.Parse(reader[4].ToString()));
-                this.lesStands.Add(Int32.Parse(reader[4].ToString()), stand);
-            }
-
-            db.deconnecter();
-        }
-        public void GetAllEquipement()
-        {
-            DAOFactory db = new DAOFactory();
-            db.connecter();
-            string req = "SELECT * FROM equipement";
-            SqlDataReader reader = db.excecSQLRead(req);
-
-            this.lesEquipement.Clear();
-
-            while (reader.Read())
-            {
-                Equipement equip = new Equipement(Int32.Parse(reader[0].ToString()), reader[1].ToString());
-                this.lesEquipement.Add(reader[1].ToString(), equip);
-                this.lesEquipementWithId.Add(Int32.Parse(reader[0].ToString()), equip);
-            }
-
-            db.deconnecter();
-        }
-        public void GetAllPartenaire()
-        {
-            DAOFactory db = new DAOFactory();
-            db.connecter();
-            string req = "SELECT * FROM partenaire";
-            SqlDataReader reader = db.excecSQLRead(req);
-
-            List<Partenaire> lesPartenaires = new List<Partenaire>();
-            
-            while (reader.Read())
-            {
-                Partenaire part = new Partenaire(Int32.Parse(reader[0].ToString()), reader[1].ToString(), Int32.Parse(reader[2].ToString()));
-                lesPartenaires.Add(part);
-            }
-
-            db.deconnecter();
-            this.lesPartenaires = lesPartenaires;
-        }
-        
-        public void GetAllTypePartenaire()
-        {
-            DAOFactory db = new DAOFactory();
-            db.connecter();
-            string req = "SELECT * FROM typePartenaire";
-            SqlDataReader reader = db.excecSQLRead(req);
-
-            Dictionary<Int32, TypePartenaire> lesTypes = new Dictionary<Int32, TypePartenaire>();
-            lesTypeParNom.Clear();
-            
-            while (reader.Read())
-            {
-                TypePartenaire part = new TypePartenaire(Int32.Parse(reader[0].ToString()), reader[1].ToString());
-                lesTypes.Add(Int32.Parse(reader[0].ToString()), part);
-                lesTypeParNom.Add(reader[1].ToString(), part);
-            }
-
-            db.deconnecter();
-            this.lesType = lesTypes;
         }
 
         private void BtnCreationPartenaire_Click(object sender, EventArgs e)
@@ -302,42 +209,49 @@ namespace PPE_LIGUE_DAO
 
         private void BtnAJouterEquipement_Click(object sender, EventArgs e)
         {
-            var label = ComboEquipement.SelectedItem.ToString();
-            var equipement = this.lesEquipement[label];
-            
-            this.lesFuturEquipement.Add(equipement);
-            ComboEquipementStand.Items.Clear();
-
-            foreach (var v in this.lesFuturEquipement)
+            if (ComboEquipement.SelectedIndex != -1)
             {
-                ComboEquipementStand.Items.Add(v.GetLabel());
+                var label = ComboEquipement.SelectedItem.ToString();
+                var equipement = this.lesEquipement[label];
+            
+                this.lesFuturEquipement.Add(equipement);
+                ComboEquipementStand.Items.Clear();
+
+                foreach (var v in this.lesFuturEquipement)
+                {
+                    ComboEquipementStand.Items.Add(v.GetLabel());
+                }
             }
+
         }
 
         private void BtnRetirerEquipement_Click(object sender, EventArgs e)
         {
-            
-            var label = ComboEquipementStand.SelectedItem.ToString();
-            //MessageBox.Show(label);
-            Equipement equipementToRemove = new Equipement(1, "dump");
-            foreach (var v in this.lesFuturEquipement)
+            if (ComboEquipementStand.SelectedIndex != -1)
             {
-                if (v.GetLabel() == label)
+                var label = ComboEquipementStand.SelectedItem.ToString();
+                //MessageBox.Show(label);
+                Equipement equipementToRemove = new Equipement(1, "dump");
+                foreach (var v in this.lesFuturEquipement)
                 {
-                    equipementToRemove = v;
-                    //this.lesFuturEquipement.Remove(v);
-                }
+                    if (v.GetLabel() == label)
+                    {
+                        equipementToRemove = v;
+                        //this.lesFuturEquipement.Remove(v);
+                    }
                 
+                }
+
+                this.lesFuturEquipement.Remove(equipementToRemove);
+            
+                ComboEquipementStand.ResetText();
+                ComboEquipementStand.Items.Clear();
+                foreach (var v in this.lesFuturEquipement)
+                {
+                    ComboEquipementStand.Items.Add(v.GetLabel());
+                }   
             }
 
-            this.lesFuturEquipement.Remove(equipementToRemove);
-            
-            ComboEquipementStand.ResetText();
-            ComboEquipementStand.Items.Clear();
-            foreach (var v in this.lesFuturEquipement)
-            {
-                ComboEquipementStand.Items.Add(v.GetLabel());
-            }
         }
 
         private void BtnAjouterStand_Click(object sender, EventArgs e)
@@ -398,7 +312,8 @@ namespace PPE_LIGUE_DAO
             db.execSQLWrite(req);
             db.deconnecter();
             
-            GetAllStands();
+            this.lesStands.Clear();
+            this.lesStands = DAOStands.GetAllStands();
             var idStand = GetMaxStandId();
 
             //MessageBox.Show("idStand: " + idStand);

@@ -46,7 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAOEquipement.cs" />
+    <Compile Include="DAOEquipementStand.cs" />
     <Compile Include="DAOFactory.cs" />
+    <Compile Include="DAOPartenaire.cs" />
+    <Compile Include="DAOStands.cs" />
+    <Compile Include="DAOTypePartenaire.cs" />
     <Compile Include="Equipement.cs" />
     <Compile Include="EquipementStand.cs" />
     <Compile Include="loginDAO.cs" />
