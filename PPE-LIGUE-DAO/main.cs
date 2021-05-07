@@ -90,8 +90,22 @@ namespace PPE_LIGUE_DAO
                 DataGridViewAffect.Rows.Add(v.Value.GetId(), v.Value.GetnAlle(), v.Value.GetnOrdre(), v.Value.GetSurface() + "m", GetPartenaireLabelById(v.Value.GetIdPartenaire()));
                 ComboListStandes.Items.Add(v.Value.GetId());
             }
+        }
 
-            
+        public bool IsAlreadyAdded(String label)
+        {
+            bool added = false;
+
+            foreach (var v in this.lesFuturEquipement)
+            {
+                if (v.GetLabel() == label)
+                {
+                    added = true;
+                    break;
+                }
+            }
+
+            return added;
         }
 
         public int GetMaxStandId()
@@ -150,31 +164,42 @@ namespace PPE_LIGUE_DAO
 
         private void BtnCreationPartenaire_Click(object sender, EventArgs e)
         {
-            string name = TxtBoxCreatePartName.Text;
-            object selectedTypeLabel = ComboTypePart.SelectedItem;
-            int id = lesTypeParNom[selectedTypeLabel.ToString()].GetId();
-
-            if (name != "")
+            if (ComboTypePart.SelectedIndex != -1)
             {
-                if (!DoesPartenaireAlreadyExistByName(name))
+                string name = TxtBoxCreatePartName.Text;
+                object selectedTypeLabel = ComboTypePart.SelectedItem;
+                int id = lesTypeParNom[selectedTypeLabel.ToString()].GetId();
+
+                if (name != "")
                 {
-                    DAOFactory db = new DAOFactory();
-                    db.connecter();
-                    string req = "INSERT INTO partenaire VALUES ('" + id +"', '" + name +"')";
-                    db.execSQLWrite(req);
+                    if (!DoesPartenaireAlreadyExistByName(name))
+                    {
+                        DAOFactory db = new DAOFactory();
+                        db.connecter();
+                        string req = "INSERT INTO partenaire VALUES ('" + id +"', '" + name +"')";
+                        db.execSQLWrite(req);
             
-                    MessageBox.Show("name: " + name + "\nType: " + selectedTypeLabel.ToString() + "\nAjouté !");
-                    LoadCreationPartenaireData();
+                        MessageBox.Show("name: " + name + "\nType: " + selectedTypeLabel.ToString() + "\nAjouté !");
+                        LoadCreationPartenaireData();
+                        ComboTypePart.ResetText();
+                        TxtBoxCreatePartName.Clear();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Le partenaire éxiste déja!"); 
+                    }  
                 }
                 else
                 {
-                    MessageBox.Show("Le partenaire éxiste déja!"); 
+                    MessageBox.Show("Le nom est vide"); 
                 }  
+                
             }
             else
             {
-                MessageBox.Show("Le nom est vide"); 
+                MessageBox.Show("Aucune séléction"); 
             }
+            
             
         }
 
@@ -212,15 +237,24 @@ namespace PPE_LIGUE_DAO
             if (ComboEquipement.SelectedIndex != -1)
             {
                 var label = ComboEquipement.SelectedItem.ToString();
-                var equipement = this.lesEquipement[label];
-            
-                this.lesFuturEquipement.Add(equipement);
-                ComboEquipementStand.Items.Clear();
-
-                foreach (var v in this.lesFuturEquipement)
+                if (!IsAlreadyAdded(label))
                 {
-                    ComboEquipementStand.Items.Add(v.GetLabel());
+                    var equipement = this.lesEquipement[label];
+            
+                    this.lesFuturEquipement.Add(equipement);
+                    ComboEquipementStand.Items.Clear();
+
+                    foreach (var v in this.lesFuturEquipement)
+                    {
+                        ComboEquipementStand.Items.Add(v.GetLabel());
+                    }
                 }
+                else
+                {
+                    MessageBox.Show("Équipement déjà ajouté"); 
+                }
+                
+                
             }
 
         }
@@ -364,6 +398,11 @@ namespace PPE_LIGUE_DAO
             }
         }
 
-        
+
+        private void main_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            MessageBox.Show("Bye");   
+            Application.Exit();  // j'y est pensé ! :D
+        }
     }
 }

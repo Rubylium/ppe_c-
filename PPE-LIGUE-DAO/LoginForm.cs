@@ -33,5 +33,10 @@ namespace PPE_LIGUE_DAO
             }
             
         }
+
+        private void LoginForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit(); // j'y est pensé ! :D
+        }
     }
 }
