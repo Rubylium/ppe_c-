@@ -46,15 +46,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAOEquipement.cs" />
-    <Compile Include="DAOEquipementStand.cs" />
-    <Compile Include="DAOFactory.cs" />
-    <Compile Include="DAOPartenaire.cs" />
-    <Compile Include="DAOStands.cs" />
-    <Compile Include="DAOTypePartenaire.cs" />
-    <Compile Include="Equipement.cs" />
-    <Compile Include="EquipementStand.cs" />
-    <Compile Include="loginDAO.cs" />
+    <Compile Include="class\Equipement.cs" />
+    <Compile Include="class\EquipementStand.cs" />
+    <Compile Include="class\Partenaire.cs" />
+    <Compile Include="class\Program.cs" />
+    <Compile Include="class\Stands.cs" />
+    <Compile Include="class\TypePartenaire.cs" />
+    <Compile Include="DAO\DAOEquipement.cs" />
+    <Compile Include="DAO\DAOEquipementStand.cs" />
+    <Compile Include="DAO\DAOFactory.cs" />
+    <Compile Include="DAO\DAOPartenaire.cs" />
+    <Compile Include="DAO\DAOStands.cs" />
+    <Compile Include="DAO\DAOTypePartenaire.cs" />
+    <Compile Include="DAO\loginDAO.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,11 +71,7 @@
     <Compile Include="main.Designer.cs">
       <DependentUpon>main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Partenaire.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Stands.cs" />
-    <Compile Include="TypePartenaire.cs" />
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>

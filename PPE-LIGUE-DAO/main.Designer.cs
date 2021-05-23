@@ -510,7 +510,7 @@ namespace PPE_LIGUE_DAO
             this.Controls.Add(this.tabControl1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "main";
-            this.Text = "main";
+            this.Text = "Application Stand";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.main_FormClosed);
             this.tabControl1.ResumeLayout(false);
             this.tabCreateStand.ResumeLayout(false);

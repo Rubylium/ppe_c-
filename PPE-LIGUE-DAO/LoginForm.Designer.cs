@@ -93,7 +93,7 @@ namespace PPE_LIGUE_DAO
             this.Controls.Add(this.boxLogin);
             this.Name = "LoginForm";
             this.ShowIcon = false;
-            this.Text = "LoginForm";
+            this.Text = "Authentification";
             this.TopMost = true;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LoginForm_FormClosed);
             this.ResumeLayout(false);
